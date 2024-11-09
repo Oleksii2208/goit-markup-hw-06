@@ -352,7 +352,7 @@ img {
   margin-top: o auto;
   max-width: 1440px;
   padding: 72px 0;
-  max-width: 320px;
+  /* max-width: 320px; */
 }
 
 @media screen and (min-resolution: 192dpi) {
@@ -405,7 +405,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/Dark-bg-tab-1x.jpg);
-    max-width: 768px;
+    /* max-width: 768px; */
     padding: 112px 0;
   }
 
@@ -567,6 +567,7 @@ img {
 }
 
 .team-container {
+  max-width: 296px;
 }
 
 .team-title {
@@ -584,7 +585,7 @@ img {
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 72px;
   justify-content: center;
 }
@@ -640,7 +641,7 @@ img {
 
 .tem-container {
   display: block;
-  width: 584px;
+  padding: 32px 0;
 }
 
 .team-container-icon {
@@ -648,7 +649,13 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .tem-container {
+    max-width: 584px;
+  }
+
   .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 64px;
   }
@@ -663,6 +670,10 @@ img {
 @media screen and (min-width: 1158px) {
   .container {
     width: 100%;
+  }
+
+  .tem-container {
+    max-width: 1158px;
   }
 
   .team {
@@ -753,13 +764,13 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 100%;
-  }
-
   .portfolio-list {
     column-gap: 24px;
     row-gap: 72px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
   }
 
   .portfolio-item:hover {
@@ -780,14 +791,20 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
   .portfolio {
     padding: 120px 0;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 24px * 2) / 3);
   }
 
   .portfolio-list {
     column-gap: 24px;
     row-gap: 48px;
-    width: calc((100% - 24 * 3) / 3);
   }
 }
 
@@ -911,7 +928,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    max-width: 768px;
+    max-width: 584px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -958,7 +975,7 @@ img {
     gap: unset;
   }
   .footer-container {
-    max-width: 100%;
+    max-width: 1158px;
     align-items: baseline;
   }
 
