@@ -236,6 +236,7 @@ img {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  z-index: 999;
 }
 
 .mobile-menu-conteiner {
@@ -352,7 +353,8 @@ img {
   margin-top: o auto;
   max-width: 1440px;
   padding: 72px 0;
-  /* max-width: 320px; */
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 @media screen and (min-resolution: 192dpi) {
@@ -405,7 +407,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/Dark-bg-tab-1x.jpg);
-    /* max-width: 768px; */
+    max-width: 768px;
     padding: 112px 0;
   }
 
@@ -520,16 +522,11 @@ img {
 
   .features-container {
   }
-  /* .features-container {
-    width: 100%;
-    max-width: 1158px;
-  } */
 
   .features-list {
     display: flex;
     gap: 24px;
     max-width: 1128px;
-    /* margin: 0 auto; */
   }
 
   .features-item {
@@ -649,7 +646,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .tem-container {
+  .team-container {
     max-width: 584px;
   }
 
@@ -1164,6 +1161,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: flex;
+  align-items: center;
 }
 .modal-check-text span {
   width: 16px;
