@@ -52,15 +52,15 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-heroicons"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-conteiner">
-          <button type="button" class="mobile-menu-cloze">
+          <button type="button" class="mobile-menu-cloze" data-menu-close>
             <svg class="mobile-button-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-cloze"></use>
             </svg>
@@ -153,7 +153,7 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn btn-container">
+          <button type="button" class="hero-btn btn-container" data-modal-open>
             Order Service
           </button>
         </div>
@@ -710,9 +710,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-open-btn">
+        <button type="button" class="modal-open-btn" data-modal-close>
           <svg class="modal-button-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-cloze"></use>
           </svg>
@@ -782,13 +782,17 @@
               ><span class="span-privacy"
                 ><svg class="modal-check-text" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use></svg></span
-              >I accept the terms and conditions of the
-              <a class="modal-privacy" href="">Privacy Policy</a></label
+              ><span class="modal-check-privacy-text"
+                >I accept the terms and conditions of the
+                <a class="modal-privacy" href="">Privacy Policy</a></span
+              ></label
             >
           </div>
           <button class="modal-submit" type="submit">Send</button>
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
